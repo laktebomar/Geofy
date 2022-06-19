@@ -1,12 +1,12 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Geofy a web app for Moroccans to get their documents",
+  "text": "With the use of digitalisation you can get your documents from home without wasting your time.",
   "button": [
     {
-      "title": "Explore"
+      "title": "E-note"
     },
     {
-      "title": "Learn more",
+      "title": "E-service",
       "color": "#fff"
     }
   ]

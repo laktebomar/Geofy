@@ -56,14 +56,45 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <ValidationType type="email" />
               </Col>
               <Col span={24}>
-                <TextArea
-                  placeholder="Your Message"
-                  value={values.message || ""}
-                  name="message"
+                <Input
+                  type="text"
+                  name="Phone number"
+                  placeholder="phone number"
+                  value={values.phone || ""}
                   onChange={handleChange}
                 />
-                <ValidationType type="message" />
+                <ValidationType type="phone" />
               </Col>
+              <Col span={24}>
+                <Input
+                  type="text"
+                  name="CIN"
+                  placeholder="Y6762"
+                  value={values.cin || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="cin" />
+              </Col>
+              <Col span={24}>
+                <Input
+                  type="text"
+                  name="refernece fonciere"
+                  placeholder="example"
+                  value={values.ref || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="ref" />
+              </Col>
+              <Col span={24}>
+                <Input
+                  type="text"
+                  name="Site geographic situation"
+                  placeholder="example"
+                  value={values.sgs || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="sgs" />
+                </Col>
               <ButtonContainer>
                 <Button name="submit">{t("Submit")}</Button>
               </ButtonContainer>
